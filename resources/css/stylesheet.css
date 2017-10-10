@@ -2,10 +2,17 @@ body {
     background: #ebebeb;
     color: white;
     font-family: 'PT Sans', sans-serif;
+    width: 1600px;
 }
-
-p {
-    font-size: 0.8rem;
+.search-form input{
+    height: 30px;
+    padding: 5px;
+}
+.logo .logo-wrapper {
+    height: 50px;
+}
+header p {
+    font-size: 0.6875rem;
 }
 
 .purple-text {
@@ -25,31 +32,44 @@ a {
 }
 
 .header-top-container {
-    position: absolute;
-    left: 20%;
-    top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     color: #9c9c9c;
     width: 60%;
-    margin-top: 20px;
-    height: 8vh;
-
+    height: 50px;
 }
-
+.quick-links {
+    align-self: center;
+    font-size: 0.6875rem;
+}
+.dropdown {
+    align-self: center;
+    font-size: 0.6875rem;
+}
 .logo-label-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 
+}
+.logo-label-container h1 {
+    -webkit-margin-before: 0.0em;
+    -webkit-margin-after: 0.0em;
+}
+.logo-label-container p {
+    -webkit-margin-before: 0.0em;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
-
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 * {
@@ -58,29 +78,28 @@ a {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 18vh;
+    padding: 1px;
+    height: 230px;
+    width: 100%;
 }
 
 nav[class="main-nav"] {
-    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
     width: 60%;
     display: flex;
+    height: 115px;
+
 }
 
 nav[class="main-nav"] ul {
-    margin-top: 20px;
     display: flex;
     width: 100%;
-    align-items: flex-end;
-    position: relative;
+    height: 100%;
 }
 
 nav[class="main-nav"] ul li {
-    position: relative;
-    top: 20px;
     box-sizing: border-box;
     background: #ffffff;
     display: block;
@@ -88,11 +107,14 @@ nav[class="main-nav"] ul li {
     border-right: 1px solid gray;
     border-bottom: 3px solid #8f33c4;
     text-align: center;
-    height: 75px;
+    height: 115px;
 }
+
 nav[class="main-nav"] ul li:hover {
     border-bottom: 8px solid #8f33c4;
-    height: 85px;
+    height: 130px;
+    position: relative;
+    bottom: 15px;
 }
 
 .hero-container {
@@ -111,17 +133,13 @@ nav[class="main-nav"] ul li:hover {
 }
 
 .hero-container a {
-
     width: 10%;
-
 }
 
 .map-features {
-
     background-color: #2d2d2d;
     display: flex;
     justify-content: center;
-
 }
 
 .map-features-container {
@@ -150,7 +168,6 @@ nav[class="main-nav"] ul li:hover {
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .column-layout {
@@ -196,12 +213,12 @@ nav[class="main-nav"] ul li:hover {
     margin-bottom: calc(50vh / 2 - 100px);
 }
 
-
 .team {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .team-container {
     margin-top: 50px;
     display: flex;
@@ -209,24 +226,28 @@ nav[class="main-nav"] ul li:hover {
     align-items: center;
     width: 60%;
 }
+
 .slider {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-
 }
+
 .profile-photo {
     position: relative;
 }
+
 .profile-photo a {
     display: block;
     position: absolute;
     bottom: 7%;
     right: 6%;
 }
+
 .gray-text {
     color: #717171;
 }
+
 .slider-nav a {
     display: block;
     border-radius: 50%;
@@ -235,18 +256,21 @@ nav[class="main-nav"] ul li:hover {
     background-color: #979797;
     margin-right: 2px;
 }
+
 .slider-nav a:last-child {
     margin-right: 0;
 }
+
 .slider-nav a:hover{
     background-color: #8f33c4;
 }
+
 .slider-nav {
     display: flex;
     margin-top: 20px;
     width: 50px;
-
 }
+
 .articles {
     width: 100%;
     margin-top: 20px;
@@ -255,6 +279,7 @@ nav[class="main-nav"] ul li:hover {
     justify-content: center;
     border-bottom: 5px solid #914dcf;
 }
+
 .article-container {
     width: 60%;
     display: flex;
@@ -262,6 +287,7 @@ nav[class="main-nav"] ul li:hover {
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 .half-width-article {
     box-sizing: border-box;
     position: relative;
@@ -269,28 +295,33 @@ nav[class="main-nav"] ul li:hover {
     background-color: #ffffff;
     width: calc(100% - 50% - 10px);
 }
+
 .half-width-article p {
     color: #949494;
 }
-.half-width-article h3 {
 
+.half-width-article h3 {
     margin-bottom: 20px;
 }
+
 .half-width-article h2 {
     color: #252525;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
 .full-width-article {
     margin-top: 20px;
     width: 100%;
     align-self: center;
 }
+
 .expand-button {
     position: absolute;
     top: 0;
     left: 0;
 }
+
 footer {
     width: 100%;
     height: 50vh;
@@ -298,6 +329,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .footer-container {
     margin-top: 20px;
     width: 60%;
@@ -305,6 +337,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .footer-logo-nav-container {
     display: flex;
     flex-direction: row;
@@ -315,73 +348,84 @@ footer {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
 .footer-logo img {
     display: block;
     width: 100%;
     height: 100%;
-
 }
+
 .footer-logo {
     display: block;
     width: 30%;
 }
+
 .footer-logo-nav-container .footer-nav {
     display: flex;
     width: 48%;
 }
+
 .footer-nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .footer-nav ul li {
     width: 20%;
     display: block;
     height: 30px;
     box-sizing: border-box;
-
 }
+
 .footer-nav ul li:hover {
     border-bottom: 4px solid #8f33c4;
 }
+
 .footer-nav ul li a {
     display: block;
     text-align: center;
     border-right: 1px solid white;
 }
+
 .footer a {
     color: white;
 }
+
 .footer-description-and-social {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
 }
+
 .footer-description-and-social p {
     width: 50%;
-
 }
+
 .footer-description-and-social .social {
     width: 48%;
     display: flex;
     justify-content: flex-start;
 }
+
 .social a {
     display: block;
     width: calc(100%/6);
 }
+
 .useful-links {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
 }
+
 .useful-links a {
     display: block;
     margin-right: 10px;
-
 }
+
 .copyrights {
     color: #565656;
     width: 80%;

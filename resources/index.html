@@ -11,14 +11,16 @@
 <body>
 <header>
     <div class="header-top-container">
-
         <div class="logo">
-            <img src="content/logo.gif">
+            <div class="logo-wrapper">
+            <img class="logo-img" src="content/logo.gif">
+            </div>
             <div class="logo-label-container">
                 <h1 class="purple-text">travler</h1>
-                <p class="logo-description">Get the advice you need about travel</p></div>
+                <p class="logo-description">Get the advice you need about travel</p>
+            </div>
         </div>
-        <div class="quick-links"><a href="#">Quick links</a></div> <!--any link -->
+        <div class="quick-links"><a href="#">Quick links</a></div>
         <div class="dropdown">
             <form name="dropbox" id="drop-box-form" method="post">
                 <select name="drop-list" id="drop-list-item">
@@ -27,13 +29,10 @@
                 </select>
             </form>
         </div>
-        <div class="search-form">
-
-            <form name="search" id="search-form" method="get">
+            <form class="search-form" name="search" id="search-form" method="get">
                 <input type="search" name="search-request" placeholder="type your request">
                 <input type="submit" name="submit-button" value="submit">
             </form>
-        </div>
     </div>
 
     <nav class="main-nav">
