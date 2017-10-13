@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="travel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/stylesheet.css" rel="stylesheet">
-    <title>Get the advice you need about travel!</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <title>Get the advice you need about travel!</title>
 </head>
 <body>
+<svg width="0" height="0">
+    <defs>
+        <filter id="purple-filter">
+            <fecomponenttransfer>
+                <feFuncR type="linear" slope="1" intercept="0.5"></feFuncR>
+                <feFuncG type="linear" slope="0.5"></feFuncG>
+                <feFuncB type="linear" slope="1" intercept="0.8"></feFuncB>
+            </fecomponenttransfer>
+        </filter>
+    </defs>
+</svg>
 <header>
     <div class="header-top-container">
         <div class="logo">
@@ -20,7 +33,7 @@
                 <p class="logo-description">Get the advice you need about travel</p>
             </div>
         </div>
-        <div class="quick-links"><a href="#">Quick links</a></div>
+        <div class="quick-links"><a class="quick-links-icon" href="#">Quick links</a></div>
         <div class="dropdown">
             <form name="dropbox" id="drop-box-form" method="post">
                 <select name="drop-list" id="drop-list-item">
@@ -30,8 +43,9 @@
             </form>
         </div>
             <form class="search-form" name="search" id="search-form" method="get">
-                <input type="search" name="search-request" placeholder="type your request">
-                <input type="submit" name="submit-button" value="submit">
+                <input class="search-field" type="search" name="search-request" placeholder="type your request">
+                <label class="search-label" for="button"><input id="button" class="search-button" type="submit"
+                                                                name="submit-button" value=""></label>
             </form>
     </div>
 
@@ -56,13 +70,13 @@
 </section>
 <section class="map-features">
     <div class="map-features-container">
-        <h1 style="margin-top: 30px; margin-bottom: 10px">Anywhere, anytime, where here to help.</h1>
+        <h1 style="margin-top: 50px; margin-bottom: 10px">Anywhere, anytime, where here to help.</h1>
         <p class="purple-text" style="margin-bottom: 10px">And we mean that.</p>
         <img width="108%" src="content/map.png">
         <div class="features-container">
-            <img style="display: block; width: 8%" src="content/save-time.png">
-            <img style="display: block; width: 8%" src="content/win-over.png">
-            <img style="display: block; width: 8%" src="content/design-features.png">
+            <img style="width: 8%" src="content/save-time.png">
+            <img style="width: 8%" src="content/win-over.png">
+            <img style="width: 8%" src="content/design-features.png">
         </div>
         <div class="column-features-container">
 

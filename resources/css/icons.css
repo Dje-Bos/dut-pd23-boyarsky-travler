@@ -1,0 +1,73 @@
+.quick-links-icon {
+    display: block;
+    position: relative;
+}
+
+.quick-links-icon::after {
+    content: '';
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    right: -50%;
+    display: block;
+}
+
+.quick-links-icon:hover::after {
+    filter: url(#purple-filter);
+}
+
+.quick-links-icon::after {
+    background: url(../content/sprite.png) -10px -94px;
+
+}
+
+.world-sprite::after {
+    background: url(../content/sprite.png) 0 0;
+}
+
+.point-sprite::after {
+    background: url(../content/sprite.png) -34px 0;
+
+}
+
+.dropbox-sprite::after {
+    background: url(../content/sprite.png) -70px -4px;
+
+}
+
+.twitter-sprite:after {
+    background: url(../content/sprite.png) -101px -9px;
+
+}
+
+.clock-sprite:after {
+    background: url(../content/sprite.png) -95px -32px;
+
+}
+
+.facebook-sprite:before {
+    background: url(../content/sprite.png) -74px -32px;
+
+}
+
+.paper-plane-sprite:before {
+    background: url(../content/sprite.png) -32px -36px;
+
+}
+
+.rss-sprite:before {
+    background: url(../content/sprite.png) -90px -63px;
+
+}
+
+.doc-sprite:before {
+    background: url(../content/sprite.png) -3px -54px;
+
+}
+
+.mail-sprite::before {
+    background: url(../content/sprite.png) -39px -99px;
+
+}
