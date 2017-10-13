@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="travel">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="css/icons.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <defs>
         <filter id="purple-filter">
             <fecomponenttransfer>
-                <feFuncR type="linear" slope="1" intercept="-0.4"></feFuncR>
+                <feFuncR type="linear" slope="1" intercept="0.1"></feFuncR>
                 <feFuncG type="linear" slope="0.5"></feFuncG>
                 <feFuncB type="linear" slope="1.5" intercept="1.2"></feFuncB>
             </fecomponenttransfer>
@@ -44,8 +44,7 @@
         </div>
             <form class="search-form" name="search" id="search-form" method="get">
                 <input class="search-field" type="search" name="search-request" placeholder="type your request">
-                <label class="search-label" for="button"><input id="button" class="search-button" type="submit"
-                                                                name="submit-button" value=""></label>
+                <button class="search-button" type="submit">sample text</button>
             </form>
     </div>
 
@@ -123,6 +122,8 @@
         <h2 class="gray-text">A humble Team we are</h2>
         <p class="gray-text" style="margin-top: 10px">We'll some of us anyways</p>
         <div class="slider">
+		<div class="slider-slides">
+		<div class="slider-slide">
             <div class="profile">
                 <div class="profile-photo"><img src="content/team/first-profile-photo.png">
                 <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
@@ -130,7 +131,8 @@
                 <h3 class="profile-name gray-text">Josh Jansen</h3>
                 <p class="occupation gray-text">Digital Producer</p>
             </div>
-
+			</div>
+			<div class="slider-slide">
             <div class="profile">
                 <div class="profile-photo"><img src="content/team/third-profile-photo.png">
                 <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
@@ -138,13 +140,17 @@
                 <h3 class="profile-name gray-text">Josh Jansen</h3>
                 <p class="occupation gray-text">Digital Producer</p>
             </div>
+			</div>
+			<div class="slider-slide">
             <div class="profile">
                 <div class="profile-photo"><img src="content/team/fourth-profile-photo.png">
-                <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
+                <a class="social-profile-link" href="https://twitter.com" target="_blank"><img src="content/twitter.png"></a>
                 </div>
                 <h3 class="profile-name gray-text">Josh Jansen</h3>
                 <p class="occupation gray-text">Digital Producer</p>
             </div>
+			</div>
+			<div class="slider-slide">
             <div class="profile">
                 <div class="profile-photo"><img src="content/team/second-profile-photo.png">
                 <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
@@ -152,6 +158,7 @@
                 <h3 class="profile-name gray-text">Josh Jansen</h3>
                 <p class="occupation gray-text">Digital Producer</p>
             </div>
+			</div>
 
         </div>
         <nav class="slider-nav">
@@ -167,7 +174,7 @@
 
 <section class="articles">
     <div class="article-container">
-        <article class="half-width-article">
+        <article class="article">
            <a class="expand-button" href="#"><img src="content/expand-button.png"></a>
             <h2>Winning Design Awards</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
@@ -181,7 +188,7 @@
                 Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus
                 massa, non laoreet lorem fringilla non.</p>
         </article>
-        <article class="half-width-article">
+        <article class="article">
             <a class="expand-button" href="#"><img src="content/expand-button.png"></a>
             <h2>Badass Features</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris
@@ -195,7 +202,8 @@
                 Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus
                 massa, non laoreet lorem fringilla non.</p>
         </article>
-        <article class="half-width-article full-width-article">
+		
+        <article class="article full-width-article">
             <h2>A full col text box sits nicely like this</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
@@ -213,7 +221,7 @@
 
 <footer class="footer">
     <div class="footer-container">
-        <div class="footer-logo-nav-container">
+        <div class="footer-row1-container">
             <a class="footer-logo" href="#"><img src="content/white-logo.png"></a>
             <nav class="footer-nav">
                 <ul>
@@ -226,7 +234,7 @@
             </nav>
 
         </div>
-        <div class="footer-description-and-social">
+        <div class="footer-row2">
             <p>Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate
                 as cross as a flake. Stands out like a bluey flamin stands out like a pot. As stands
                 out like christmas to grab us a ugg boots. She'll be right buckley's chance my as stands
@@ -241,18 +249,22 @@
                 <a href="#">Mail</a>
             </div>
         </div>
+		<div class="row3">
         <div class="useful-links">
             <a href="#">About us</a>
             <a href="#">Footer links here</a>
             <a href="#">Privacy</a>
             <a href="#">Icons</a>
         </div>
+		</div>
+		<div class="row4">
         <div class="copyrights">
             <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll
                 be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. She'll be right
                 larrikin with skite. As stands out like kero it'll be truckie.
                 nch. Lets get some icy pole no dramas as cross as a ya.</p>
         </div>
+		</div>
     </div>
 </footer>
 </body>
