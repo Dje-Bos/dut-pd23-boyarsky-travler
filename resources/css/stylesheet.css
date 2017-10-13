@@ -2,7 +2,7 @@ body {
     background: #ebebeb;
     color: white;
     font-family: 'PT Sans', sans-serif;
-    width: 1550px;
+    max-width: 1550px;
 }
 
 .search-form {
@@ -99,6 +99,7 @@ a {
     margin-left: auto;
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -139,12 +140,13 @@ a {
 * {
     margin: 0;
     padding: 0;
+
 }
 
 header {
-    padding: 1px;
+    padding-top: 1px;
     height: 230px;
-    width: 100%;
+    
 }
 
 nav[class="main-nav"] {
@@ -202,7 +204,7 @@ nav[class="main-nav"] ul li:hover {
 
 .map-features {
     background-color: #2d2d2d;
-    height: 765px;
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -253,34 +255,37 @@ nav[class="main-nav"] ul li:hover {
 .screen-features {
     background-color: #222222;
     display: flex;
-    height: 525px;
+    
     justify-content: center;
-    align-items: flex-end;
+    
+    padding-top: 40px;
+    background:  #222222 url(../content/screen-features.png) no-repeat center bottom;
+    height: 470px;
 }
 
 .screen-features-container {
-    margin-top: 25px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 1225px;
-    background: url(../content/screen-features.png) no-repeat center;
-    height: 470px;
-    background-size: cover;
+    width: 60%;
+    
+    
 }
 
 .screen-features-container h2 {
-    margin-bottom: 10px;
+    
 }
 
 .screen-features-container p {
-    margin-bottom: calc(50vh / 2 - 100px);
+    
 }
 
 .team {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -289,24 +294,28 @@ nav[class="main-nav"] ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 80%;
 }
 
 .slider {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 .profile-photo {
     position: relative;
+    width: 100%;
+    
 }
 
 .profile-photo a {
     display: block;
     position: absolute;
-    bottom: 7%;
-    right: 6%;
+    bottom: 0;
+    right: 0;
 }
 
 .gray-text {
@@ -337,7 +346,6 @@ nav[class="main-nav"] ul li:hover {
 }
 
 .articles {
-    width: 100%;
     margin-top: 20px;
     color: #8f33c4;
     display: flex;
@@ -388,8 +396,6 @@ nav[class="main-nav"] ul li:hover {
 }
 
 footer {
-    width: 100%;
-    height: 50vh;
     background-color: #373737;
     display: flex;
     justify-content: center;
