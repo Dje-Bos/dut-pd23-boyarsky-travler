@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="travel">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="css/icons.css" rel="stylesheet">
     <title>Get the advice you need about travel!</title>
@@ -26,7 +26,7 @@
     <div class="header-top-container">
         <div class="logo">
             <div class="logo-wrapper">
-            <img class="logo-img" src="content/logo.gif">
+                <img class="logo-img" src="content/logo.gif">
             </div>
             <div class="logo-label-container">
                 <h1 class="purple-text">travler</h1>
@@ -42,10 +42,10 @@
                 </select>
             </form>
         </div>
-            <form class="search-form" name="search" id="search-form" method="get">
-                <input class="search-field" type="search" name="search-request" placeholder="type your request">
-                <button class="search-button" type="submit">sample text</button>
-            </form>
+        <form class="search-form" name="search" id="search-form" method="get">
+            <input class="search-field" type="search" name="search-request" placeholder="type your request">
+            <button class="search-button hide-text" type="submit">submit request</button>
+        </form>
     </div>
 
     <nav class="main-nav">
@@ -63,19 +63,19 @@
 <section class="hero>">
     <div class="hero-container">
 
-        <a href=""><img src="content/search.png" alt="search"></a>
+        <a class="hero-search hide-text" href="">Search</a>
 
     </div>
 </section>
 <section class="map-features">
     <div class="map-features-container">
-        <h1 style="margin-top: 50px; margin-bottom: 10px">Anywhere, anytime, where here to help.</h1>
-        <p class="purple-text" style="margin-bottom: 10px">And we mean that.</p>
-        <img width="108%" src="content/map.png">
+        <h1>Anywhere, anytime, where here to help.</h1>
+        <p class="purple-text">And we mean that.</p>
+        <img src="content/map.png">
         <div class="features-container">
-            <img style="width: 8%" src="content/save-time.png">
-            <img style="width: 8%" src="content/win-over.png">
-            <img style="width: 8%" src="content/design-features.png">
+            <img src="content/save-time.png">
+            <img src="content/win-over.png">
+            <img src="content/design-features.png">
         </div>
         <div class="column-features-container">
 
@@ -120,100 +120,122 @@
 <section class="team">
     <div class="team-container">
         <h2 class="gray-text">A humble Team we are</h2>
-        <p class="gray-text" style="margin-top: 10px">We'll some of us anyways</p>
+        <p class="gray-text">We'll some of us anyways</p>
         <div class="slider">
-		<div class="slider-slides">
-		<div class="slider-slide">
-            <div class="profile">
-                <div class="profile-photo"><img src="content/team/first-profile-photo.png">
-                <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
+            <div class="slider-slides">
+                <div class="slider-slide">
+                    <div class="profile">
+                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                            <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                                link</a>
+                        </div>
+                        <h3 class="profile-name gray-text">Josh Jansen</h3>
+                        <p class="occupation gray-text">Digital Producer</p>
+                    </div>
                 </div>
-                <h3 class="profile-name gray-text">Josh Jansen</h3>
-                <p class="occupation gray-text">Digital Producer</p>
-            </div>
-			</div>
-			<div class="slider-slide">
-            <div class="profile">
-                <div class="profile-photo"><img src="content/team/third-profile-photo.png">
-                <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
+                <div class="slider-slide">
+                    <div class="profile">
+                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                            <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                                link</a>
+                        </div>
+                        <h3 class="profile-name gray-text">Josh Jansen</h3>
+                        <p class="occupation gray-text">Digital Producer</p>
+                    </div>
                 </div>
-                <h3 class="profile-name gray-text">Josh Jansen</h3>
-                <p class="occupation gray-text">Digital Producer</p>
-            </div>
-			</div>
-			<div class="slider-slide">
-            <div class="profile">
-                <div class="profile-photo"><img src="content/team/fourth-profile-photo.png">
-                <a class="social-profile-link" href="https://twitter.com" target="_blank"><img src="content/twitter.png"></a>
+                <div class="slider-slide">
+                    <div class="profile">
+                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                            <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                                link</a>
+                        </div>
+                        <h3 class="profile-name gray-text">Josh Jansen</h3>
+                        <p class="occupation gray-text">Digital Producer</p>
+                    </div>
                 </div>
-                <h3 class="profile-name gray-text">Josh Jansen</h3>
-                <p class="occupation gray-text">Digital Producer</p>
-            </div>
-			</div>
-			<div class="slider-slide">
-            <div class="profile">
-                <div class="profile-photo"><img src="content/team/second-profile-photo.png">
-                <a class="social-profile-link" href="https://twitter.com"><img src="content/twitter.png"></a>
+                <div class="slider-slide">
+                    <div class="profile">
+                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                            <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                                link</a>
+                        </div>
+                        <h3 class="profile-name gray-text">Josh Jansen</h3>
+                        <p class="occupation gray-text">Digital Producer</p>
+                    </div>
                 </div>
-                <h3 class="profile-name gray-text">Josh Jansen</h3>
-                <p class="occupation gray-text">Digital Producer</p>
             </div>
-			</div>
 
+            <nav class="slider-nav">
+
+                <a class="slide-nav-item hide-text" href="#">First show</a>
+                <a class="slide-nav-item hide-text" href="#">Second show</a>
+                <a class="slide-nav-item hide-text" href="#">Third show</a>
+                <a class="slide-nav-item hide-text" href="#">Fourth show</a>
+
+            </nav>
         </div>
-        <nav class="slider-nav">
-
-            <a class="slide-nav-item" href="#"></a>
-            <a class="slide-nav-item" href="#"></a>
-            <a class="slide-nav-item" href="#"></a>
-            <a class="slide-nav-item" href="#"></a>
-
-        </nav>
     </div>
 </section>
 
 <section class="articles">
     <div class="article-container">
         <article class="article">
-           <a class="expand-button" href="#"><img src="content/expand-button.png"></a>
+            <a class="expand-button hide-text" href="#">Expand article</a>
             <h2>Winning Design Awards</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
                 Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est,
-                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis
+            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+                est,
+                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
+                in faucibus
+                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed
+                ac magna quis
                 erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.
 
-                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus
+                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia
+                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                Phasellus faucibus rhoncus
                 massa, non laoreet lorem fringilla non.</p>
         </article>
         <article class="article">
-            <a class="expand-button" href="#"><img src="content/expand-button.png"></a>
+            <a class="expand-button hide-text" href="#">Expand article</a>
             <h2>Badass Features</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper
+                mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est,
-                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis
+            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+                est,
+                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
+                in faucibus
+                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed
+                ac magna quis
                 erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.
 
-                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus
+                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia
+                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                Phasellus faucibus rhoncus
                 massa, non laoreet lorem fringilla non.</p>
         </article>
-		
+
         <article class="article full-width-article">
             <h2>A full col text box sits nicely like this</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper
+                mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>orbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est,
-                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis
+            <p>orbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+                est,
+                at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
+                in faucibus
+                orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed
+                ac magna quis
                 erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.
 
-                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus
+                Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia
+                Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                Phasellus faucibus rhoncus
                 massa, non laoreet lorem fringilla non.</p>
         </article>
     </div>
@@ -222,7 +244,7 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-row1-container">
-            <a class="footer-logo" href="#"><img src="content/white-logo.png"></a>
+            <a class="footer-logo" href="#">Main</a>
             <nav class="footer-nav">
                 <ul>
                     <li><a href="#">Portfolio</a></li>
@@ -249,22 +271,24 @@
                 <a href="#">Mail</a>
             </div>
         </div>
-		<div class="row3">
-        <div class="useful-links">
-            <a href="#">About us</a>
-            <a href="#">Footer links here</a>
-            <a href="#">Privacy</a>
-            <a href="#">Icons</a>
+        <div class="row3">
+            <div class="useful-links">
+                <a href="#">About us</a>
+                <a href="#">Footer links here</a>
+                <a href="#">Privacy</a>
+                <a href="#">Icons</a>
+            </div>
         </div>
-		</div>
-		<div class="row4">
-        <div class="copyrights">
-            <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll
-                be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. She'll be right
-                larrikin with skite. As stands out like kero it'll be truckie.
-                nch. Lets get some icy pole no dramas as cross as a ya.</p>
+        <div class="row4">
+            <div class="copyrights">
+                <p>
+                    As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll
+                    be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. She'll be right
+                    larrikin with skite. As stands out like kero it'll be truckie.
+                    nch. Lets get some icy pole no dramas as cross as a ya.
+                </p>
+            </div>
         </div>
-		</div>
     </div>
 </footer>
 </body>

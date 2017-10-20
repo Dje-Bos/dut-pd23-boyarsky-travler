@@ -19,7 +19,7 @@
 }
 
 .quick-links-icon::after {
-    background: url(../content/sprite.png) -10px -94px;
+    background: url(links.svg) no-repeat;
 
 }
 
