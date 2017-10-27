@@ -196,6 +196,7 @@ header {
 
 .map{
     display: block;
+    width: 100%;
 
 	
 }
@@ -276,10 +277,17 @@ header {
     align-items: center;
     width: 80%;
 }
-
 .slider {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.slider-slides {
     margin-top: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -326,27 +334,29 @@ header {
 }
 
 .articles {
+    width: 100%;
     margin-top: 20px;
     color: #8f33c4;
     display: flex;
+
     justify-content: center;
     border-bottom: 5px solid #914dcf;
 }
-.half-width-article-container {
+.article {
 	display: flex;
 	flex-wrap: wrap;
 	
 }
-.article-container {
+ .article-container {
     width: 60%;
     display: flex;
     justify-content: space-between;
 	flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 20px;
-}
+} 
 
-.half-width-article {
+.article {
     box-sizing: border-box;
     position: relative;
     padding: 20px;
@@ -354,15 +364,15 @@ header {
     width: calc(100% - 50% - 10px);
 }
 
-.half-width-article p {
+.article p {
     color: #949494;
 }
 
-.half-width-article h3 {
+.article h3 {
     margin-bottom: 20px;
 }
 
-.half-width-article h2 {
+.h2 {
     color: #252525;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -375,6 +385,7 @@ header {
 }
 
 .expand-button {
+    width: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -448,18 +459,18 @@ footer {
     color: white;
 }
 
-.footer-description-and-social {
+.footer-middle {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.footer-description-and-social p {
+.footer-middle p {
     width: 50%;
 }
 
-.footer-description-and-social .social {
+.footer-middle .social {
     width: 48%;
     display: flex;
     justify-content: flex-start;
