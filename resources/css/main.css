@@ -1,3 +1,7 @@
+@media screen and (max-width: 640px) {
+	
+}
+
 body {
     background: #ebebeb;
     color: white;
@@ -64,6 +68,7 @@ a {
     
 }
 
+
 .header-top-container a:hover {
     color: #8f33c4;
 }
@@ -78,7 +83,7 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     color: #9c9c9c;
-    width: 60%;
+    max-width: 1160px;
     height: 50px;
 }
 .quick-links {
@@ -127,7 +132,7 @@ header {
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
-    width: 60%;
+    max-width: 1160px;
     display: flex;
     height: 115px;
 
@@ -174,6 +179,12 @@ header {
     width: 138px;
 	height: 138px;
 	background-image: url(../content/search.png);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	transition-properly: all;
+}
+.hero-container .hero-search:hover {
+	transform: scale(1.2);
 }
 
 .map-features {
@@ -190,7 +201,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    max-width: 1160px;
     
 }
 
@@ -202,6 +213,7 @@ header {
 }
 
 .features-container {
+	
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -278,18 +290,20 @@ header {
     width: 80%;
 }
 .slider {
-    width: 90%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 .slider-slides {
+	width: 100%;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+	align
 }
 
 
@@ -348,7 +362,7 @@ header {
 	
 }
  .article-container {
-    width: 60%;
+	max-width: 1160px;
     display: flex;
     justify-content: space-between;
 	flex-wrap: wrap;
