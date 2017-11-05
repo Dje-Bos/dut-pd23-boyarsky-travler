@@ -12,41 +12,77 @@
     <title>Get the advice you need about travel!</title>
 </head>
 <body>
-
+<svg width="0" height="0">
+    <defs>
+        <filter id="purpleFilter">
+            <fecomponenttransfer>
+                <feFuncR type="linear" slope="0.8"/>
+                <feFuncG type="linear" slope="0.21"/>
+                <feFuncB type="linear" slope="1.34"/>
+                <feFuncA type="identity"/>
+            </fecomponenttransfer>
+        </filter>
+    </defs>
+</svg>
 <header>
     <div class="header-top-container">
         <div class="logo">
             <div class="logo-wrapper">
-                <img class="logo-img" src="content/logo.gif">
+                <img class="logo-img" src="content/header_icons/logo.gif">
             </div>
             <div class="logo-label-container">
-                <h1 class="purple-text">travler</h1>
+                <h1 class="logo-text">travler</h1>
                 <p class="logo-description">Get the advice you need about travel</p>
             </div>
         </div>
-        <div class="quick-links"><a class="quick-links-icon" href="#">Quick links</a></div>
-        <div class="dropdown">
-            <form name="dropbox" id="drop-box-form" method="post">
-                <select name="drop-list" id="drop-list-item">
-                    <option>1 option</option>
-                    <option>2 option</option>
+        <div class="links-dropdown-form-wrapper">
+            <div class="quick-links">
+                <a class="quick-links-icon gray-text" href="#">Quick links</a>
+            </div>
+            <div class="dropdown">
+                <select form="search-form" class="dropdown-select gray-text" name="drop-list" id="drop-list-item">
+                    <option value="">Select from dropdown</option>
                 </select>
-            </form>
-        </div>
+            </div>
         <form class="search-form" name="search" id="search-form" method="get">
-            <input class="search-field" type="search" name="search-request" placeholder="type your request">
+            <input class="search-field" type="search" name="search-request" placeholder="Search for something here">
             <button class="search-button hide-text" type="submit">submit request</button>
         </form>
+    </div>
     </div>
 
     <nav class="main-nav">
         <ul>
-            <li><svg width="20px" height="20px"></svg><a href="#">Guide</a></li>
-            <li><svg width="20px" height="20px"></svg><a href="#">Services</a></li>
-            <li><svg width="20px" height="20px"></svg><a href="#">the Tour</a></li>
-            <li><svg width="20px" height="20px"></svg><a href="#">About</a></li>
-            <li><svg width="20px" height="20px"></svg><a href="#">How To</a></li>
-            <li><svg width="20px" height="20px"></svg><a href="#">Contact</a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/guide.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">Guide</p></a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/service.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">Services</p></a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/tour.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">The Tour</p></a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/about.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">About</p></a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/how to.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">How To</p></a></li>
+            <li><a href="#">
+                <svg class="nav-bar-svg-link" width="30px" height="30px">
+                    <image height="30px" xlink:href="content/nav-bar-icons/contact.svg" width="30px"/>
+                </svg>
+                <p class="nav-bar-link">Contact</p></a></li>
         </ul>
     </nav>
 </header>
@@ -60,14 +96,14 @@
 </section>
 <section class="map-features">
     <div class="map-features-container">
-        <h1>Anywhere, anytime, where here to help.</h1>
-        <p class="purple-text">And we mean that.</p>
+        <h1 class="map-features-header">Anywhere, anytime, we are here to help.</h1>
+        <p class="map-features-descr purple-text">And we mean that.</p>
         <img class="map" src="content/map.png">
         <div class="column-features-container">
 
             <div class="column-layout">
-				<img class="column-feature" src="content/save-time.png">
-                <h3>Save time</h3>
+                <img class="column-feature-icon" src="content/save-time.png">
+                <h3 class="column-header">Save time</h3>
                 <p>Lets throw a trackie dacks also. Lets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
@@ -76,8 +112,9 @@
                 </p>
             </div>
             <div class="column-layout">
-				<div class="column-feature-wrapper"><img class="column-feature" src="content/win-over.png"></div>
-                <h3>Win over the team</h3>
+                <div class="column-feature-icon-wrapper"><img class="column-feature-icon" src="content/win-over.png">
+                </div>
+                <h3 class="column-header">Win over the team</h3>
                 <p>Lets throw a trackie dacks also. Lets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
@@ -85,8 +122,8 @@
                 </p>
             </div>
             <div class="column-layout">
-				<img class="column-feature" src="content/design-features.png">
-                <h3>Design Features</h3>
+                <img class="column-feature-icon" src="content/design-features.png">
+                <h3 class="column-header">Design Features</h3>
                 <p>Lets throw a trackie dacks also. Lets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
                     Lets throw a trackie dacks alsoLets throw a trackie dacks also
@@ -105,20 +142,20 @@
 			<img src="#">
 			<img src="#">
 		</div>
-        <h2>A simple beginning lead to big ideas</h2>
+        <h2>A simple beginning leads to big ideas</h2>
         <p class="purple-text">We started small but grew quickly</p>
     </div>
 </section>
 
 <section class="team">
     <div class="team-container">
-        <h2 class="gray-text">A humble Team we are</h2>
-        <p class="gray-text">We'll some of us anyways</p>
+        <h2 class="header gray-text">A humble Team we are</h2>
+        <p class="description gray-text">We'll some of us anyways</p>
         <div class="slider">
             <div class="slider-slides">
                 <div class="slider-slide">
                     <div class="profile">
-                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                        <div class="profile-photo"><img class="photo" src="content/team/first-profile-photo.png">
                             <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                                 link</a>
                         </div>
@@ -128,32 +165,32 @@
                 </div>
                 <div class="slider-slide">
                     <div class="profile">
-                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                        <div class="profile-photo"><img class="photo" src="content/team/second-profile-photo.png">
                             <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                                 link</a>
                         </div>
-                        <h3 class="profile-name gray-text">Josh Jansen</h3>
-                        <p class="occupation gray-text">Digital Producer</p>
+                        <h3 class="profile-name gray-text">Skeletor</h3>
+                        <p class="occupation gray-text">Administration</p>
                     </div>
                 </div>
                 <div class="slider-slide">
                     <div class="profile">
-                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                        <div class="profile-photo"><img class="photo" src="content/team/third-profile-photo.png">
                             <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                                 link</a>
                         </div>
-                        <h3 class="profile-name gray-text">Josh Jansen</h3>
-                        <p class="occupation gray-text">Digital Producer</p>
+                        <h3 class="profile-name gray-text">Blaz Robar</h3>
+                        <p class="occupation gray-text">Designer</p>
                     </div>
                 </div>
                 <div class="slider-slide">
                     <div class="profile">
-                        <div class="profile-photo"><img src="content/team/first-profile-photo.png">
+                        <div class="profile-photo"><img class="photo" src="content/team/fourth-profile-photo.png">
                             <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                                 link</a>
                         </div>
-                        <h3 class="profile-name gray-text">Josh Jansen</h3>
-                        <p class="occupation gray-text">Digital Producer</p>
+                        <h3 class="profile-name gray-text">James Brown</h3>
+                        <p class="occupation gray-text">Developer</p>
                     </div>
                 </div>
             </div>
@@ -174,10 +211,11 @@
     <div class="article-container">
         <article class="article">
             <a class="expand-button hide-text" href="#">Expand article</a>
-            <h2>Winning Design Awards</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+            <h2 class="header">Winning Design Awards</h2>
+            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
                 Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+            <p class="content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
                 in faucibus
@@ -193,11 +231,13 @@
         </article>
         <article class="article">
             <a class="expand-button hide-text" href="#">Expand article</a>
-            <h2>Badass Features</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper
+            <h2 class="header">Badass Features</h2>
+            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+                Pellentesque ullamcorper
                 mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+            <p class="content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
                 in faucibus
@@ -213,11 +253,13 @@
         </article>
 
         <article class="article full-width-article">
-            <h2>A full col text box sits nicely like this</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper
+            <h2 class="header">A full col text box sits nicely like this</h2>
+            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+                Pellentesque ullamcorper
                 mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p>orbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis
+            <p class="content-text">orbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
                 in faucibus
@@ -237,7 +279,14 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-top">
-            <a class="footer-logo" href="#">Main</a>
+            <div class="footer-logo-container">
+                <a class="footer-logo hide-text" href="#"><img src="content/footer_icons/white-logo.png">Main</a>
+                <div class="logo-label-container">
+                    <h1 class="logo-text">travler</h1>
+                    <p class="logo-description">Get the advice you need about travel</p>
+                </div>
+            </div>
+            <div class="table-wrapper">
             <div class="footer-nav">
                 <ul>
                     <li><a href="#">Portfolio</a></li>
@@ -248,9 +297,10 @@
                 </ul>
             </div>
 
+            </div>
         </div>
         <div class="footer-middle">
-            <p>Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate
+            <p class="description">Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate
                 as cross as a flake. Stands out like a bluey flamin stands out like a pot. As stands
                 out like christmas to grab us a ugg boots. She'll be right buckley's chance my as stands
                 out like divvy van. It'll be smokes trent from punchy chewie.

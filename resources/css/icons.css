@@ -4,70 +4,77 @@
 }
 
 .quick-links-icon::after {
-    content: '';
-    width: 11px;
-    height: 16px;
+    content: url("../content/header_icons/point.svg");
+    width: 15px;
+    height: 15px;
     position: absolute;
     top: 0;
     z-index: 10000;
-    right: -50%;
+    right: 20px;
     display: block;
 }
 
 .quick-links-icon:hover::after {
-    filter: url(#purple-filter);
+    filter: url(#purpleFilter);
 }
 
-.quick-links-icon::after {
-    background: url(links.svg) no-repeat;
-
+.dropdown::after {
+    content: url("../content/header_icons/scroll-arrow-to-down (1).svg");
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 15px;
+    pointer-events: none;
+    position: absolute;
 }
 
-.world-sprite::after {
-    background: url(../content/sprite.png) 0 0;
+.dropdown::before {
+    content: url("../content/header_icons/scroll-arrow-to-down.svg");
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 8px;
+    position: absolute;
+    pointer-events: none;
 }
 
-.point-sprite::after {
-    background: url(../content/sprite.png) -34px 0;
-
+.dropdown:hover::before {
+    filter: url(#purpleFilter);
 }
 
-.dropbox-sprite::after {
-    background: url(../content/sprite.png) -70px -4px;
-
+.dropdown:hover::after {
+    filter: url(#purpleFilter);
 }
 
-.twitter-sprite:after {
-    background: url(../content/sprite.png) -101px -9px;
-
+.social a:last-child::before {
+    content: url("../content/footer_icons/mail.png");
+    position: absolute;
+    left: -20px;
 }
 
-.clock-sprite:after {
-    background: url(../content/sprite.png) -95px -32px;
-
+.social a:nth-child(3)::before {
+    content: url("../content/footer_icons/rss.svg");
+    position: absolute;
+    left: -20px;
 }
 
-.facebook-sprite:before {
-    background: url(../content/sprite.png) -74px -32px;
-
+.social a:nth-child(2)::before {
+    content: url("../content/footer_icons/facebook.svg");
+    position: absolute;
+    left: -20px;
 }
 
-.paper-plane-sprite:before {
-    background: url(../content/sprite.png) -32px -36px;
-
+.social a:first-child {
+    padding: 0 0 0 22px;
 }
 
-.rss-sprite:before {
-    background: url(../content/sprite.png) -90px -63px;
-
+.social a:first-child::before {
+    content: url("../content/footer_icons/twitter-footer.svg");
+    position: absolute;
+    left: 2px;
 }
 
-.doc-sprite:before {
-    background: url(../content/sprite.png) -3px -54px;
-
-}
-
-.mail-sprite::before {
-    background: url(../content/sprite.png) -39px -99px;
-
+.footer-nav ul li:nth-child(2n) {
+    border-right: 1px solid #767676;
+    border-left: 1px solid #767676;
 }
