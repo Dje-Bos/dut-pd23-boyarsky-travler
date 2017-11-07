@@ -1,0 +1,30 @@
+@media screen and (max-width: 955px) {
+    .column-layout:nth-child(2)::before {
+        display: none;
+    }
+
+    .column-layout:nth-child(2)::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .team-container .header::after {
+        display: none;
+    }
+
+    .team-container .header::before {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 844px) {
+    .header-top-container {
+        justify-content: center;
+    }
+
+    .links-dropdown-form-wrapper {
+        justify-content: space-around;
+    }
+}
