@@ -1,19 +1,20 @@
 body {
     background: #ebebeb;
     color: white;
+    min-width: 320px;
     font-family: 'PT Sans', sans-serif;
 }
 
+.links-dropdown-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .hide-text {
     white-space: nowrap;
     text-indent: 100%;
     overflow: hidden;
 }
 
-.dropdown {
-
-    width: 150px;
-}
 
 .dropdown-select {
     -webkit-appearance: none;
@@ -109,7 +110,7 @@ a {
     padding-top: 10px;
     align-self: center;
     font-size: 10px;
-    width: 95px;
+    width: 80px;
     position: relative;
 
 }
@@ -131,10 +132,13 @@ a {
 }
 
 .dropdown {
+    width: 165px;
+    padding-left: 15px;
     padding-top: 10px;
     align-self: center;
     font-size: 10px;
     position: relative;
+
 }
 
 .dropdown .dropdown-select {
@@ -245,6 +249,9 @@ header {
     border-right: none;
 }
 
+.svgFilter {
+    position: absolute;
+}
 .main-nav ul li:hover {
     border-bottom: 8px solid #8f33c4;
     height: 125px;
@@ -263,9 +270,11 @@ header {
 }
 
 .hero-container .hero-search {
-    width: 138px;
-	height: 138px;
-	background-image: url(../content/search.png);
+    width: 14.3%;
+    height: 25.6%;
+    min-width: 100px;
+    background: url(../content/search.png) no-repeat center;
+    background-size: contain;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-out;
 }
@@ -378,20 +387,60 @@ header {
 
 .screen-features {
     padding-top: 40px;
-    background:  #222222 url(../content/screen-features.png) no-repeat center bottom;
+    background: #222222 url(../content/Imac-screen.png) no-repeat center bottom;
     height: 520px;
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
+.features-figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    padding-bottom: 40px;
+    position: relative;
+}
 .screen-features-container {
-    max-width: 650px;
-    padding: 300px 10px 80px;
+    max-width: 960px;
+    padding: 215px 10px 80px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.screen-features-container h2 {
+.hidden-image {
+    display: none;
+}
+
+.second-feature::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16%;
+    height: 5px;
+    background: #dedede;
+    border-radius: 3px;
+    top: 34%;
+    right: 25%;
+    overflow: hidden;
+}
+
+.second-feature::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16%;
+    height: 5px;
+    background: #dedede;
+    border-radius: 3px;
+    top: 34%;
+    left: 25%;
+    overflow: hidden;
+}
+
+.screen-features-container .header {
     width: 100%;
     text-align: center;
     font-size: 1.8em;
@@ -400,8 +449,11 @@ header {
     font-weight: normal;
 }
 
-.screen-features-container p {
+.screen-features-container .description {
     text-align: center;
+    color: #8145bd;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px #6708cb;
 
 }
 

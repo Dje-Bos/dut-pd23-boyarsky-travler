@@ -13,7 +13,7 @@
     <title>Get the advice you need about travel!</title>
 </head>
 <body>
-<svg width="0" height="0">
+<svg class="svgFilter" width="0" height="0">
     <defs>
         <filter id="purpleFilter">
             <fecomponenttransfer>
@@ -37,13 +37,15 @@
             </div>
         </div>
         <div class="links-dropdown-form-wrapper">
-            <div class="quick-links">
-                <a class="quick-links-icon gray-text" href="#">Quick links</a>
-            </div>
-            <div class="dropdown">
-                <select form="search-form" class="dropdown-select gray-text" name="drop-list" id="drop-list-item">
-                    <option value="">Select from dropdown</option>
-                </select>
+            <div class="links-dropdown-wrapper">
+                <div class="quick-links">
+                    <a class="quick-links-icon gray-text" href="#">Quick links</a>
+                </div>
+                <div class="dropdown">
+                    <select form="search-form" class="dropdown-select gray-text" name="drop-list" id="drop-list-item">
+                        <option value="">Select from dropdown</option>
+                    </select>
+                </div>
             </div>
         <form class="search-form" name="search" id="search-form" method="get">
             <input class="search-field" type="search" name="search-request" placeholder="Search for something here">
@@ -137,14 +139,13 @@
 <section class="screen-features">
     <div class="screen-features-container">
 		<div class="features-figure">
-			<img src="#">
-			<img src="#">
-			<img src="#">
-			<img src="#">
-			<img src="#">
+            <img src="content/White-clock.png">
+            <img class="hidden-image" src="content/share.svg">
+            <div class="second-feature"><img src="content/Cloud-White.png"></div>
+            <img src="content/Cube-White.png">
 		</div>
-        <h2>A simple beginning leads to big ideas</h2>
-        <p class="purple-text">We started small but grew quickly</p>
+        <h2 class="header">A simple beginning leads to big ideas</h2>
+        <p class="description">We started small but grew quickly</p>
     </div>
 </section>
 

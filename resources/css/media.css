@@ -17,6 +17,7 @@
         display: none;
     }
 
+
 }
 
 @media screen and (max-width: 844px) {
@@ -26,5 +27,163 @@
 
     .links-dropdown-form-wrapper {
         justify-content: space-around;
+    }
+
+    .header-top-container {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-container {
+        padding-bottom: 60px;
+    }
+
+    .article-container {
+        flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
+        margin-top: 10px;
+        padding: 30px 30px;
+    }
+
+    .screen-features {
+        background: #222222 url("../content/iphone.png") no-repeat center bottom;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .column-features-container {
+        padding-top: 20px;
+    }
+
+    .screen-features .header {
+        font-size: 1.5em;
+    }
+
+    .screen-features-container {
+        max-width: 275px;
+        flex-direction: column;
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    .features-figure {
+        width: 280px;
+        flex-direction: column;
+        padding-bottom: 10px;
+        height: 250px;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .features-figure img {
+        width: 60px;
+
+    }
+
+    .features-figure img:nth-child(1) {
+        align-self: center;
+    }
+
+    .features-figure img:nth-child(4) {
+        position: absolute;
+        top: 70%;
+        left: 72%;
+    }
+
+    .second-feature::after {
+        display: none;
+    }
+
+    .second-feature::before {
+        display: none;
+    }
+
+    .features-figure .second-feature {
+        align-self: flex-start;
+        padding-left: 10px;
+    }
+
+    .features-figure .second-feature img {
+        vertical-align: middle;
+        width: 75px;
+
+    }
+
+    .hidden-image {
+        display: block;
+        padding-bottom: 0;
+
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 641px) {
+    .screen-features {
+        background: #222222 url("../content/iphone-portrait.png") no-repeat center bottom;
+        height: 360px;
+
+    }
+
+    .features-figure img {
+        width: 76px;
+    }
+
+    .features-figure {
+        width: 600px;
+        padding-bottom: 10px;
+    }
+
+    .screen-features .screen-features-container {
+        max-width: 600px;
+        padding: 50px 30px 40px 50px;
+        justify-content: flex-end;
+    }
+
+    .screen-features .header {
+        font-size: 1.5em;
+        letter-spacing: 3px;
+    }
+
+    .features-figure .second-feature img {
+
+        width: 85px;
+
+    }
+
+    .column-layout:nth-child(2)::before {
+        display: none;
+    }
+
+    .column-layout:nth-child(2)::after {
+        display: none;
+    }
+
+    .team-container .header::after {
+        display: none;
+    }
+
+    .team-container .header::before {
+        display: none;
+    }
+
+    .header-top-container {
+        justify-content: center;
+    }
+
+    .links-dropdown-form-wrapper {
+        justify-content: space-around;
+    }
+
+    .header-top-container {
+        padding-top: 15px;
+    }
+
+    .footer-container {
+        padding-bottom: 120px;
     }
 }
