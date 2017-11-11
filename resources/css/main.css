@@ -1,6 +1,31 @@
+@font-face {
+    font-family: Nexa;
+    src: url("../fonts/Nexa Light.otf");
+}
+
+@font-face {
+    font-family: Helventica;
+    src: url("../fonts/Helvetica.otf");
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url("../fonts/Nexa Bold.otf");
+}
+
+@font-face {
+    font-family: NexaBlack;
+    src: url("../fonts/nexa-black.ttf");
+}
+
+@font-face {
+    font-family: NexaBook;
+    src: url("../fonts/nexa-book.ttf");
+}
 body {
     background: #ebebeb;
     color: white;
+    font-size: 16px;
     min-width: 320px;
     font-family: 'PT Sans', sans-serif;
 }
@@ -15,15 +40,32 @@ body {
     overflow: hidden;
 }
 
-
 .dropdown-select {
+    font-size: 0.78rem;
     -webkit-appearance: none;
     background: none;
     border: 0 none;
+    font-family: "NexaBold", sans-serif;
+    width: 100%;
+    cursor: pointer;
 }
 
 .dropdown-select:focus {
     outline: none;
+}
+
+.dropdown {
+    width: 165px;
+    padding-left: 15px;
+    padding-top: 10px;
+    align-self: center;
+    position: relative;
+
+}
+
+.dropdown-select:hover {
+    font-weight: bold;
+    color: #8f33c4;
 }
 .search-form {
     padding-top: 10px;
@@ -40,10 +82,6 @@ body {
     padding-right: 20px;
 }
 
-
-header p {
-    font-size: 0.6875rem;
-}
 
 .purple-text {
     color: #8f33c4;
@@ -82,9 +120,6 @@ a {
     filter: url(#purpleFilter);
 }
 
-
-
-
 .header-top-container {
     margin-right: auto;
     margin-left: auto;
@@ -107,16 +142,16 @@ a {
     flex-wrap: wrap;
 }
 .quick-links {
+    font-family: "NexaBold", sans-serif;
     padding-top: 10px;
     align-self: center;
-    font-size: 10px;
+    font-size: 0.78rem;
     width: 80px;
     position: relative;
 
 }
 
 .quick-links a:hover {
-    font-weight: 900;
     color: #8f33c4;
 }
 
@@ -131,26 +166,7 @@ a {
     position: absolute;
 }
 
-.dropdown {
-    width: 165px;
-    padding-left: 15px;
-    padding-top: 10px;
-    align-self: center;
-    font-size: 10px;
-    position: relative;
 
-}
-
-.dropdown .dropdown-select {
-    font-size: 10px;
-    width: 100%;
-    cursor: pointer;
-}
-
-.dropdown-select:hover {
-    font-weight: bold;
-    color: #8f33c4;
-}
 
 .logo-label-container {
     display: flex;
@@ -160,21 +176,16 @@ a {
 }
 
 .logo-label-container .logo-text {
-    -webkit-margin-before: 0.0em;
-    -webkit-margin-after: 0.0em;
+    color: #6719aa;
+    font-size: 2.5rem;
+    font-family: "NexaBlack", sans-serif;
 }
 
 .logo-label-container .logo-description {
-    -webkit-margin-before: 0.0em;
     font-style: italic;
+    font-size: 0.75rem;
 }
 
-.logo-text {
-    color: #6719aa;
-    font-weight: 900;
-    font-size: 2.5em;
-
-}
 .logo {
     display: flex;
     flex-direction: row;
@@ -190,10 +201,11 @@ a {
 header {
     padding-top: 1px;
     height: 230px;
-    
+
 }
 
 .main-nav {
+    font-weight: bold;
     padding-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -213,8 +225,7 @@ header {
 }
 
 .nav-bar-link {
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 1.125rem;
 
 }
 
@@ -291,16 +302,19 @@ header {
 }
 
 .map-features-descr {
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
     padding-bottom: 20px;
     text-align: center;
+    font-family: "NexaBold", sans-serif;
 }
 
 .map-features-header {
-    font-size: 2.0em;
+    font-size: 2.0rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     padding: 0 10px;
-    font-weight: normal;
+    font-family: "NexaBook", sans-serif;
 }
 .map-features-container {
     display: flex;
@@ -318,7 +332,7 @@ header {
 	
 }
 .column-features-container {
-
+    font-family: NexaBook, sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -334,6 +348,11 @@ header {
 	align-self: center;
 
 
+}
+
+.column-layout .content-text {
+    font-size: 0.75rem;
+    line-height: 1.375rem;
 }
 
 .column-layout:nth-child(2)::before {
@@ -361,7 +380,6 @@ header {
 }
 
 .column-header {
-    letter-spacing: 2px;
     padding-top: 55px;
     padding-bottom: 23px;
     font-size: 1.6em;
@@ -441,19 +459,20 @@ header {
 }
 
 .screen-features-container .header {
+    word-spacing: 5px;
+    font-family: NexaBook, sans-serif;
     width: 100%;
     text-align: center;
-    font-size: 1.8em;
-    letter-spacing: 5px;
+    font-size: 2.25rem;
     padding-bottom: 25px;
     font-weight: normal;
 }
 
 .screen-features-container .description {
+    font-size: 0.9375rem;
+    font-family: "NexaBold", sans-serif;
     text-align: center;
     color: #8145bd;
-    font-weight: bold;
-    -webkit-text-stroke: 0.1px #6708cb;
 
 }
 
@@ -473,9 +492,9 @@ header {
 }
 
 .team-container .header {
-    font-size: 2.0em;
+    font-family: NexaBook, sans-serif;
+    font-size: 2.0625rem;
     letter-spacing: 3px;
-    font-weight: normal;
     position: relative;
     max-width: 380px;
     text-align: center;
@@ -509,6 +528,8 @@ header {
 }
 
 .team-container .description {
+    font-size: 0.9375rem;
+    font-family: "NexaBold", sans-serif;
     padding-bottom: 20px;
 }
 .slider {
@@ -535,10 +556,12 @@ header {
 }
 
 .profile-name {
+    font-weight: bold;
     padding-left: 10px;
 }
 
 .occupation {
+    font-size: 0.875rem;
     padding-left: 10px;
 }
 
@@ -613,15 +636,21 @@ header {
 
 .article .content-text {
     color: #949494;
+    font-size: 0.79rem;
+    line-height: 1.4rem;
 }
 
 .article .header {
+    font-size: 1.9375rem;
+    font-family: "NexaBold", sans-serif;
     color: #2d2d2d;
     padding-bottom: 20px;
-    font-weight: normal;
 }
 
 .article .sub-header {
+    font-size: 0.91rem;
+    line-height: 1.82em;
+    font-family: "NexaBold", sans-serif;
     padding-bottom: 40px;
 }
 
@@ -685,11 +714,12 @@ footer {
 }
 
 .footer-top .logo-text {
+    font-family: NexaBlack, sans-serif;
     color: white;
-    font-size: 1.9em;
+    font-size: 2.5em;
 }
 
-.footer-top .logo-label-container .logo-description {
+.footer-top .logo-description {
     font-size: 0.75em;
     color: #d9d9d9;
 
@@ -708,6 +738,7 @@ footer {
 }
 
 .footer-nav {
+    font-family: "NexaBold", sans-serif;
     align-self: center;
     display: table;
     flex-grow: 2;
@@ -767,8 +798,10 @@ footer {
 }
 
 .footer-middle .description {
+    font-family: Helventica, sans-serif;
     padding-top: 20px;
-    font-size: 0.8em;
+    font-size: 0.75rem;
+    line-height: 1.45rem;
     max-width: 450px;
     color: #d9d9d9;
 }
@@ -789,7 +822,8 @@ footer {
 }
 
 .useful-links {
-    font-size: 0.8em;
+    font-family: Helventica, sans-serif;
+    font-size: 0.75rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -802,7 +836,9 @@ footer {
 }
 
 .copyrights {
-    font-size: 0.7em;
+    font-family: Helventica, sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
     padding-top: 10px;
     color: #565656;
     width: 80%;
