@@ -34,11 +34,6 @@ body {
     margin: 0;
     padding-right: 0;
 }
-h1 {
-    -webkit-margin-before: 0.0em;
-    -webkit-margin-after: 0.0em;
-    margin: 0 0;
-}
 
 .quick-links-icon {
     display: block;
@@ -129,32 +124,28 @@ h1 {
     color: #8f33c4;
 }
 
-a {
-    text-decoration: none;
+.travel-guide{
+	background: url("../img/nav-bar-icons/world.svg") no-repeat center 20px;
 }
 
-.list li:nth-child(1) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/world.svg") no-repeat center 20px;
+.service {
+	background: url("../img/nav-bar-icons/service.svg") no-repeat center 20px;
 }
 
-.list li:nth-child(2) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/service.svg") no-repeat center 20px;
+.about{
+	    background: url("../img/nav-bar-icons/about.svg") no-repeat center 20px;
 }
 
-.list li:nth-child(3) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/about.svg") no-repeat center 20px;
+.tour{
+	background: url("../img/nav-bar-icons/tour.svg") no-repeat center 20px;
 }
 
-.list li:nth-child(4) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/tour.svg") no-repeat center 20px;
+.how_to {
+	background: url("../img/nav-bar-icons/how_to.svg") no-repeat center 20px;
 }
 
-.list li:nth-child(5) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/how_to.svg") no-repeat center 20px;
-}
-
-.list li:nth-child(6) .nav-bar-svg-link {
-    background: url("../img/nav-bar-icons/contact.svg") no-repeat center 20px;
+.contact {
+	background: url("../img/nav-bar-icons/contact.svg") no-repeat center 20px;
 }
 
 .list li:nth-child(1):hover .nav-bar-svg-link {
@@ -387,6 +378,7 @@ a {
     width: 15.244%;
 }
 .hero-container {
+	background-color: #8f33c4;
     background: url(../img/hero.png) center no-repeat;
     background-size: cover;
     width: 100%;
@@ -400,6 +392,7 @@ a {
     width: 14.3%;
     height: 25.6%;
     min-width: 100px;
+	background-color: #8f33c4;
     background: url(../img/search.png) no-repeat center;
     background-size: contain;
 }
@@ -428,6 +421,9 @@ a {
     letter-spacing: 3px;
     padding: 0 6px 0 15px;
     font-family: "NexaBook", sans-serif;
+	-webkit-margin-before: 0.0em;
+    -webkit-margin-after: 0.0em;
+    margin: 0 0;
 }
 .map-features-container {
     display: flex;
@@ -529,6 +525,7 @@ a {
 }
 
 .screen-features {
+	background-color: #8f33c4;
     background: #222222 url(../img/Imac-screen.png) no-repeat center 55px;
     height: 525px;
     display: flex;
@@ -986,11 +983,13 @@ a {
     font-size: 0.75rem;
     width: 100%;
     display: flex;
+	
     justify-content: flex-start;
     padding-bottom: 10px;
 }
 
 .footer-bottom-link {
+	text-decoration: none;
     display: block;
     padding-right: 17px;
     color: white;
