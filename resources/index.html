@@ -2,101 +2,103 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="keywords" content="travel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main_minified.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link media="screen" rel="stylesheet" href="css/media.css">
+    <link media="screen" rel="stylesheet" href="css/media_minified.css">
     <link rel="icon" type="image/png" href="favicon.ico"/>
-
     <title>Get the advice you need about travel!</title>
 </head>
+
 <body>
 <header class="page-header">
     <div class="header-top-container">
         <div class="logo">
-            <img width="48" height="50" alt="travler logo" class="logo-img" src="img/header_icons/logo.png">
-            <div class="logo-label-container">
-                <p class="logo-text">travler</p>
-                <p class="logo-description">Get the advice you need about travel</p>
+            <img width="48" height="50" alt="travler logo" class="logo__image" src="img/header_icons/logo.png">
+            <div class="logo__label-container">
+                <p class="logo__title">travler</p>
+                <p class="logo__slogan">Get the advice you need about travel</p>
             </div>
         </div>
         <div class="links-dropdown-form-wrapper">
             <div class="links-dropdown-wrapper">
                 <div class="quick-links">
-                    <a class="quick-links-icon" href="#">Quicklinks</a>
+                    <a class="quick-links__icon" href="#">Quicklinks</a>
                 </div>
                 <div class="dropdown">
-                    <select form="search-form" class="dropdown-select" name="drop-list" id="drop-list-item">
-                        <option class="dropdown-option" value="">Select from dropdown</option>
+                    <select form="search-form" class="dropdown__select" name="drop-list" id="drop-list-item">
+                        <option class="dropdown__option" value="">Select from dropdown</option>
                     </select>
                 </div>
             </div>
             <form class="search-form" name="search" id="search-form" method="get">
-                <input class="search-field" type="search" name="search-request" placeholder="Search for something here">
-                <button class="search-button hide-text" type="submit">submit request</button>
+                <input class="search-form__field" type="search" name="search-request"
+                       placeholder="Search for something here">
+                <button class="search-form__button hide-text" type="submit">submit request</button>
             </form>
         </div>
     </div>
 
     <nav class="main-nav">
-        <ul class="list">
-            <li class="nav-item"><a class="nav-bar-svg-link travel-guide" href="#">
-                <p class="nav-bar-link">Travel Guide</p></a></li>
-            <li class="nav-item"><a class="nav-bar-svg-link service" href="#">
-                <p class="nav-bar-link">Services</p></a></li>
-            <li class="nav-item"><a class="nav-bar-svg-link about" href="#">
-                <p class="nav-bar-link">About</p></a></li>
-            <li class="nav-item"><a class="nav-bar-svg-link tour" href="#">
-                <p class="nav-bar-link">The Tour</p></a></li>
-            <li class="nav-item"><a class="nav-bar-svg-link how_to" href="#">
-                <p class="nav-bar-link">How To</p></a></li>
-            <li class="nav-item"><a class="nav-bar-svg-link contact" href="#">
-                <p class="nav-bar-link">Contact</p></a></li>
+        <ul class="main-nav__nav-list">
+            <li class="main-nav__tile"><a class="main-nav__link travel-guide" href="#">
+                <p class="main-nav__text">Travel Guide</p></a></li>
+            <li class="main-nav__tile"><a class="main-nav__link service" href="#">
+                <p class="main-nav__text">Services</p></a></li>
+            <li class="main-nav__tile"><a class="main-nav__link about" href="#">
+                <p class="main-nav__text">About</p></a></li>
+            <li class="main-nav__tile"><a class="main-nav__link tour" href="#">
+                <p class="main-nav__text">The Tour</p></a></li>
+            <li class="main-nav__tile"><a class="main-nav__link how_to" href="#">
+                <p class="main-nav__text">How To</p></a></li>
+            <li class="main-nav__tile"><a class="main-nav__link contact" href="#">
+                <p class="main-nav__text">Contact</p></a></li>
         </ul>
     </nav>
 </header>
 
-<div class="hero>">
-    <div class="hero-container">
-        <a class="hero-search hide-text" href="">Search</a>
-    </div>
+<div class="hero">
+    <a class="hero__search-button hide-text" href="">Search</a>
 </div>
 
 <section class="map-features">
-    <div class="map-features-container">
-        <h1 class="map-features-header">Anywhere, anytime, where here to help.</h1>
-        <p class="map-features-description purple-text">And we mean that.</p>
-        <img width="986" height="auto" class="map" alt="map" src="img/map.png">
+    <div class="map-features__container">
+        <h1 class="map-features__header">Anywhere, anytime, where here to help.</h1>
+        <p class="map-features__description purple-text">And we mean that.</p>
+        <img width="986" class="map" alt="map" src="img/map.png">
         <div class="column-features-container">
-            <div class="column-layout">
-                <img width="76" height="76" class="column-feature-icon" alt="save-time" src="img/save-time.png">
-                <h3 class="column-header">Save Time</h3>
-                <p class="content-text">Lets throw a trackie dacks also it'll be gutta. You little ripper
+            <div class="content-column">
+                <img width="76" height="76" class="content-column__icon" alt="save-time" src="img/save-time.png">
+                <h3 class="content-column__header">Save Time</h3>
+                <p class="content-column__content-text">Lets throw a trackie dacks also it'll be gutta. You little
+                    ripper
                     avos flamin lets throw a lizard drinking. Gutful of jug where as busy as a big smoke.
                     Grab us a billy as cunning as a bull bar. As cunning as a bonzer flamin as stands out like
                     cubby house. As cross as a mate no dramas as cunning as a bonzer. Gutful of kindie flamin as
                     cross as a grundies. Lets throw a</p>
             </div>
-            <div class="column-layout">
-                <div class="column-feature-icon-wrapper"><img width="84" height="51" class="column-feature-icon"
+            <div class="content-column">
+                <div class="column-feature-icon-wrapper"><img width="84" height="51" class="content-column__icon"
                                                               alt="win-over" src="img/win-over.png"></div>
-                <h3 class="column-header">Win over the team</h3>
-                <p class="content-text">As cunning as a bonzer flamin as stands out like cubby house. As cross as a
+                <h3 class="content-column__header">Win over the team</h3>
+                <p class="content-column__content-text">As cunning as a bonzer flamin as stands out like cubby house. As
+                    cross as a
                     mate no dramas as cunning as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw
                     a strides also as cross as a thingo.</p>
-                <p class="content-text">Built like a old fella no dramas grab us a ten clicks away.</p>
+                <p class="content-column__content-text">Built like a old fella no dramas grab us a ten clicks away.</p>
             </div>
-            <div class="column-layout">
-                <img width="76" height="76" class="column-feature-icon" alt="design-features"
+            <div class="content-column">
+                <img width="76" height="76" class="content-column__icon" alt="design-features"
                      src="img/design-features.png">
-                <h3 class="column-header">Design Features</h3>
-                <p class="content-text">Built like a old fella no dramas grab us a ten clicks away. Lets get some digger
+                <h3 class="content-column__header">Design Features</h3>
+                <p class="content-column__content-text">Built like a old fella no dramas grab us a ten clicks away. Lets
+                    get some digger
                     when she'll be right metho. As cross as a no dramas as cunning as a barrack.</p>
-                <p class="content-text">A old fella no dramas grab us a ten clicks away. Lets get some digger when
+                <p class="content-column__content-text">A old fella no dramas grab us a ten clicks away. Lets get some
+                    digger when
                     she'll be right metho.
                     As cross as a no dramas as cunning as a barrack.</p>
             </div>
@@ -105,68 +107,71 @@
 </section>
 <section class="screen-features">
     <div class="screen-features-container">
-        <div class="features-figure">
-            <img class="features-figure-image" width="auto" height="auto" alt="Save time" src="img/White-clock.png">
-            <img width="50" height="50" alt="unite image" class="hidden-image" src="img/share.svg">
-            <div class="second-feature"><img width="auto" height="auto" alt="Win over" src="img/Cloud-White.png"></div>
-            <img class="features-figure-image" width="auto" height="auto" alt="Design features" src="img/Cube-White.png">
+        <div class="screen-features__figure">
+            <img class="screen-features-container__feature-image" width="91" alt="Save time" src="img/White-clock.png">
+            <img width="50" height="50" alt="unite image" class="screen-features-container__hidden-image"
+                 src="img/share.svg">
+            <div class="screen-features-container__second-feature"><img width="101" alt="Win over"
+                                                                        src="img/Cloud-White.png"></div>
+            <img class="screen-features-container__feature-image" width="91" alt="Design features"
+                 src="img/Cube-White.png">
         </div>
-        <h2 class="header">A simple begining lead to big ideas</h2>
-        <p class="description">We started small but grew quickly</p>
+        <h2 class="screen-features-container__header">A simple begining lead to big ideas</h2>
+        <p class="screen-features-container__description">We started small but grew quickly</p>
     </div>
 </section>
 
 <section class="team">
     <div class="team-container">
-        <h2 class="header gray-text">A humble Team we are</h2>
-        <p class="description gray-text">We'll some of us anyways</p>
+        <h2 class="team-container__header gray-text">A humble Team we are</h2>
+        <p class="team-container__description gray-text">We'll some of us anyways</p>
         <div class="slider">
-            <div class="slider-slides">
-                <div class="slider-slide">
-                    <div class="profile-photo">
-                        <img width="240" height="230" class="photo" alt="Josh Jansen"
+            <div class="slides">
+                <div class="slide">
+                    <div class="slide__profile-photo">
+                        <img width="240" height="230" class="slide__photo" alt="Josh Jansen"
                              src="img/team/first-profile-photo.png">
-                        <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                        <a class="slide__social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                             link</a>
                     </div>
-                    <h3 class="profile-name gray-text">Josh Jansen</h3>
-                    <p class="occupation gray-text">Digital Producer</p>
+                    <h3 class="slide__profile-name gray-text">Josh Jansen</h3>
+                    <p class="slide__occupation gray-text">Digital Producer</p>
                 </div>
                 <div class="slider-slide">
-                    <div class="profile-photo">
+                    <div class="slide__profile-photo">
                         <img width="240" height="230" class="photo" alt="Skeletor"
                              src="img/team/second-profile-photo.png">
-                        <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                        <a class="slide__social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                             link</a>
                     </div>
-                    <h3 class="profile-name gray-text">Skeletor</h3>
-                    <p class="occupation gray-text">Administration</p>
+                    <h3 class="slide__profile-name gray-text">Skeletor</h3>
+                    <p class="slide__occupation gray-text">Administration</p>
                 </div>
                 <div class="slider-slide">
-                    <div class="profile-photo">
+                    <div class="slide__profile-photo">
                         <img width="240" height="230" class="photo" alt="Blaz Robar"
                              src="img/team/third-profile-photo.png">
-                        <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                        <a class="slide__social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                             link</a>
                     </div>
-                    <h3 class="profile-name gray-text">Blaz Robar</h3>
-                    <p class="occupation gray-text">Designer</p>
+                    <h3 class="slide__profile-name gray-text">Blaz Robar</h3>
+                    <p class="slide__occupation gray-text">Designer</p>
                 </div>
                 <div class="slider-slide">
-                    <div class="profile-photo"><img width="240" height="230" class="photo" alt="James Brown"
-                                                    src="img/team/fourth-profile-photo.png">
-                        <a class="social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
+                    <div class="slide__profile-photo"><img width="240" height="230" class="photo" alt="James Brown"
+                                                           src="img/team/fourth-profile-photo.png">
+                        <a class="slide__social-profile-link hide-text" href="https://twitter.com" target="_blank">Twitter
                             link</a>
                     </div>
-                    <h3 class="profile-name gray-text">James Brown</h3>
-                    <p class="occupation gray-text">Developer</p>
+                    <h3 class="slide__profile-name gray-text">James Brown</h3>
+                    <p class="slide__occupation gray-text">Developer</p>
                 </div>
             </div>
             <nav class="slider-nav">
-                <a class="slide-nav-item hide-text" href="#">First show</a>
-                <a class="slide-nav-item hide-text" href="#">Second show</a>
-                <a class="slide-nav-item hide-text" href="#">Third show</a>
-                <a class="slide-nav-item hide-text" href="#">Fourth show</a>
+                <a class="slider__nav-item hide-text" href="#">First show</a>
+                <a class="slider__nav-item hide-text" href="#">Second show</a>
+                <a class="slider__nav-item hide-text" href="#">Third show</a>
+                <a class="slider__nav-item hide-text" href="#">Fourth show</a>
             </nav>
         </div>
     </div>
@@ -175,11 +180,13 @@
 <div class="articles">
     <div class="article-container">
         <article class="article">
-            <a class="expand-button hide-text" href="#">Expand article</a>
-            <h2 class="header">Winning Design Awards</h2>
-            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+            <a class="article__expand-button hide-text" href="#">Expand article</a>
+            <h2 class="article__header">Winning Design Awards</h2>
+            <h3 class="article__sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                purus.
                 Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p class="content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+            <p class="article__content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                Vestibulum
                 consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
@@ -189,13 +196,15 @@
                 erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla</p>
         </article>
         <article class="article">
-            <a class="expand-button hide-text" href="#">Expand article</a>
-            <h2 class="header">Badass Features</h2>
-            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+            <a class="article__expand-button hide-text" href="#">Expand article</a>
+            <h2 class="article__header">Badass Features</h2>
+            <h3 class="article__sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                purus.
                 Pellentesque ullamcorper
                 mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p class="content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+            <p class="article__content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                Vestibulum
                 consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
@@ -206,12 +215,14 @@
         </article>
 
         <article class="article full-width-article">
-            <h2 class="header">A full col text box sits nicely like this</h2>
-            <h3 class="sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+            <h2 class="article__header">A full col text box sits nicely like this</h2>
+            <h3 class="article__sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                purus.
                 Pellentesque ullamcorper
                 mauris
                 vitae sapien bibendum tincidunt. Check leo dignissim +</h3>
-            <p class="content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+            <p class="article__content-text">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                Vestibulum
                 consectetur iaculis
                 est,
                 at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis
@@ -228,40 +239,41 @@
         <div class="footer-top">
             <div class="logo">
                 <img width="48" height="50" alt="white logo" class="logo-img" src="img/footer_icons/white-logo.png">
-                <div class="logo-label-container">
-                    <p class="logo-text">travler</p>
-                    <p class="logo-description">Get the advice you need about travel</p>
+                <div class="logo__label-container">
+                    <p class="logo__title">travler</p>
+                    <p class="logo__slogan">Get the advice you need about travel</p>
                 </div>
             </div>
             <div class="footer-nav">
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Portfolio</a></li>
-                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Services</a></li>
-                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Staff</a></li>
-                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Articles</a></li>
-                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Contact</a></li>
+                <ul class="footer-nav__nav-list">
+                    <li class="footer-nav__tile"><a class="footer-nav__link" href="#">Portfolio</a></li>
+                    <li class="footer-nav__tile"><a class="footer-nav__link" href="#">Services</a></li>
+                    <li class="footer-nav__tile"><a class="footer-nav__link" href="#">Staff</a></li>
+                    <li class="footer-nav__tile"><a class="footer-nav__link" href="#">Articles</a></li>
+                    <li class="footer-nav__tile"><a class="footer-nav__link" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-middle">
-            <p class="description">Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate
+            <p class="footer-middle__description">Trent from punchy digger bloody gutful of mokkies. Get a dog up ya
+                fair dinkum mate
                 as cross as a flake. Stands out like a bluey flamin stands out like a pot. As stands
                 out like christmas to grab us a ugg boots. She'll be right buckley's chance my as stands
                 out like divvy van. It'll be smokes trent from punchy chewie.
             </p>
             <div class="social">
-                <a class="social-link" href="#">Twitter</a>
-                <a class="social-link" href="#">Facebook</a>
-                <a class="social-link" href="#">RSS</a>
-                <a class="social-link" href="#">Mail</a>
+                <a class="social__link" href="#">Twitter</a>
+                <a class="social__link" href="#">Facebook</a>
+                <a class="social__link" href="#">RSS</a>
+                <a class="social__link" href="#">Mail</a>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="useful-links">
-                <a class="footer-bottom-link" href="#">About us</a>
-                <a class="footer-bottom-link" href="#">Footer links here</a>
-                <a class="footer-bottom-link" href="#">Privacy</a>
-                <a class="footer-bottom-link" href="#">Icons</a>
+                <a class="useful-links__link" href="#">About us</a>
+                <a class="useful-links__link" href="#">Footer links here</a>
+                <a class="useful-links__link" href="#">Privacy</a>
+                <a class="useful-links__link" href="#">Icons</a>
             </div>
             <div class="copyrights">
                 <p>
